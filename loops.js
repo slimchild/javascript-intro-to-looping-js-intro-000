@@ -9,24 +9,21 @@ function forLoop(array) {
   return array;
 }
 
-function whileLoop(n) {
-  let countdown = n;
-
-  while (countdown > 0) {
-    console.log(--countdown)
+function whileLoop(number) {
+  while (number > 0) {
+    console.log(--number)
   }
   return "done";
 }
 
-function doWhileLoop(array) {
-  function maybeTrue() {
-    return Math.random() >= 0.5
-  }
+function maybeTrue() {
+  return Math.random() >= 0.5
+}
 
-  function doWhileLoop(array) {
-    do {
-      array.pop();
-    }
-    while (array.length > 0 && maybeTrue());
-    return array;
+function doWhileLoop(array) {
+  do {
+    array.pop();
+  }
+  while (array.length > 0 && maybeTrue());
+  return array;
 }
